@@ -1,0 +1,34 @@
+# Правила markdownlint для руководства по стилю SQL Hunt.
+# Соответствие правилам руководства описано на странице docs/linting.md.
+config:
+  default: true
+  MD003:
+    style: atx
+  MD004:
+    style: dash
+  MD007:
+    indent: 4
+  MD013: false
+  MD024:
+    siblings_only: true
+  MD029:
+    style: ordered
+  MD035:
+    style: "---"
+  MD046:
+    style: fenced
+  MD048:
+    style: backtick
+  MD049:
+    style: asterisk
+  MD050:
+    style: asterisk
+
+globs:
+  - "**/*.md"
+
+ignores:
+  - ".github/pull_request_template.md"
+  - "node_modules/**"
+  - "site/**"
+  - ".venv/**"

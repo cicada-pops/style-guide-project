@@ -1,0 +1,18 @@
+# Словарь написания: названия технологий пишутся как у правообладателя.
+extends: substitution
+message: "Пишите '%s' вместо '%s' (словарь написания)."
+link: https://cicada-pops.github.io/style-guide-project/glossary/
+level: error
+ignorecase: false
+swap:
+  Postgres: PostgreSQL
+  Postgre: PostgreSQL
+  Github: GitHub
+  Javascript: JavaScript
+  Typescript: TypeScript
+  NextJS: Next.js
+  NextJs: Next.js
+  Nextjs: Next.js
+  Rabbitmq: RabbitMQ
+  RabbitMq: RabbitMQ
+  Json: JSON

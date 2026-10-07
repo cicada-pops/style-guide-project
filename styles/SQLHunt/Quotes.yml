@@ -1,0 +1,8 @@
+# ОП-2. В тексте используются кавычки-«ёлочки».
+extends: existence
+message: "Используйте кавычки «ёлочки» вместо прямых (ОП-2)."
+link: https://cicada-pops.github.io/style-guide-project/rules/spelling/
+level: error
+nonword: true
+tokens:
+  - '"[^"\n]+"'

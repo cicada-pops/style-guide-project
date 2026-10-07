@@ -1,0 +1,13 @@
+# СИ-5. Не обесценивайте сложность задачи для читателя.
+extends: existence
+message: "Слово '%s' может обидеть читателя, у которого не получилось. Уберите его (СИ-5)."
+link: https://cicada-pops.github.io/style-guide-project/rules/voice/
+level: warning
+ignorecase: true
+tokens:
+  - просто
+  - легко
+  - очевидно
+  - всего лишь
+  - элементарно
+  - как известно

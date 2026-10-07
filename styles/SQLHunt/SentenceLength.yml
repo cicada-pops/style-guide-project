@@ -1,0 +1,8 @@
+# СИ-3. Предложение — не длиннее 25 слов.
+extends: occurrence
+message: "Предложение длиннее 25 слов. Разделите его (СИ-3)."
+link: https://cicada-pops.github.io/style-guide-project/rules/voice/
+level: suggestion
+scope: sentence
+max: 25
+token: '[^\s]+'

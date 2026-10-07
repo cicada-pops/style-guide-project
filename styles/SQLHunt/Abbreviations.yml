@@ -1,0 +1,13 @@
+# ОП-7. Не используйте сокращения «т. к.», «т. е.», «и т. д.» в тексте.
+extends: existence
+message: "Напишите сокращение полностью: '%s' (ОП-7)."
+link: https://cicada-pops.github.io/style-guide-project/rules/spelling/
+level: warning
+nonword: true
+ignorecase: true
+tokens:
+  - 'т\. ?к\.'
+  - 'т\. ?е\.'
+  - 'и т\. ?д\.'
+  - 'и т\. ?п\.'
+  - 'напр\.'

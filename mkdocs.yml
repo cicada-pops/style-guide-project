@@ -63,3 +63,4 @@ nav:
       - Метод API: doc-templates/api-method.md
       - Описание дела: doc-templates/case.md
   - Словарь и глоссарий: glossary.md
+  - Проверка и линтинг: linting.md
