@@ -57,4 +57,9 @@ nav:
       - Оформление текста: rules/formatting.md
       - Правила работы с Markdown: rules/markdown.md
       - Точечные рекомендации: rules/recommendations.md
+  - Шаблоны:
+      - README: doc-templates/readme.md
+      - Инструкция: doc-templates/how-to.md
+      - Метод API: doc-templates/api-method.md
+      - Описание дела: doc-templates/case.md
   - Словарь и глоссарий: glossary.md
