@@ -63,4 +63,8 @@ nav:
       - Метод API: doc-templates/api-method.md
       - Описание дела: doc-templates/case.md
   - Словарь и глоссарий: glossary.md
+  - Тестирование руководства:
+      - Итоги тестирования: examples/index.md
+      - "Пример: README SQL Hunt": examples/readme.md
+      - "Пример: метод API": examples/execute-sql.md
   - Проверка и линтинг: linting.md
