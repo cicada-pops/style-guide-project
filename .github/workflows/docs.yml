@@ -1,0 +1,77 @@
+name: Docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  VALE_VERSION: 3.24.0
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check Markdown with markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v24
+
+      - name: Install Vale
+        run: |
+          mkdir -p "$HOME/.local/bin"
+          curl -sSfL "https://github.com/errata-ai/vale/releases/download/v${VALE_VERSION}/vale_${VALE_VERSION}_Linux_64-bit.tar.gz" \
+            | tar -xz -C "$HOME/.local/bin" vale
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Check prose with Vale
+        run: vale --no-wrap docs *.md
+
+  build:
+    name: Build
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install MkDocs
+        run: pip install -r requirements.txt
+
+      - name: Build site
+        run: mkdocs build --strict
+
+      - name: Upload site artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+  deploy:
+    name: Deploy
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
