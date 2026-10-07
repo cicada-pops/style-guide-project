@@ -1,0 +1,8 @@
+# ТИ-3. Многоточие — один символ «…».
+extends: existence
+message: "Замените три точки на символ многоточия «…» (ТИ-3)."
+link: https://cicada-pops.github.io/style-guide-project/rules/ui-texts/
+level: warning
+nonword: true
+tokens:
+  - '\.{3}'

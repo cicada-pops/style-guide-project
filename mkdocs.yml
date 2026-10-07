@@ -58,6 +58,7 @@ nav:
       - Правила работы с Markdown: rules/markdown.md
       - Точечные рекомендации: rules/recommendations.md
       - Доступность текста: rules/accessibility.md
+      - Тексты интерфейса: rules/ui-texts.md
   - Шаблоны:
       - README: doc-templates/readme.md
       - Инструкция: doc-templates/how-to.md
