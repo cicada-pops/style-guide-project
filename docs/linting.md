@@ -30,6 +30,9 @@
 | MD-8. Оформление файлов | markdownlint | `MD009`, `MD041`, `MD047` | error |
 | MD-9. Без голых ссылок | markdownlint | `MD034` | error |
 | ТР-1. Название продукта | Vale | `SQLHunt.ProductName` | error |
+| ДС-1. Структура заголовков | markdownlint | `MD001` | error |
+| ДС-2. Текст ссылки | Vale | `SQLHunt.LinkText` | error |
+| ДС-3. Альтернативный текст | markdownlint, Vale | `MD045`, `SQLHunt.AltText` | error |
 
 Ошибки уровня `error` блокируют merge.
 Предупреждения `warning` и `suggestion` видны в выводе линтера, но сборку не останавливают.

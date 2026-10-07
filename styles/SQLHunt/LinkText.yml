@@ -1,0 +1,10 @@
+# ДС-2. Текст ссылки понятен вне контекста.
+extends: existence
+message: "Текст ссылки не объясняет, куда она ведёт: '%s' (ДС-2)."
+link: https://cicada-pops.github.io/style-guide-project/rules/accessibility/
+level: error
+scope: raw
+nonword: true
+ignorecase: true
+tokens:
+  - '\[(здесь|тут|по ссылке|ссылка|подробнее)\]\('
