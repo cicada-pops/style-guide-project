@@ -1,0 +1,53 @@
+site_name: Руководство по стилю SQL Hunt
+site_description: Правила написания и оформления документации проекта SQL Hunt
+site_url: https://cicada-pops.github.io/style-guide-project/
+repo_url: https://github.com/cicada-pops/style-guide-project
+repo_name: cicada-pops/style-guide-project
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+validation:
+  links:
+    anchors: warn
+
+nav:
+  - Главная: index.md
