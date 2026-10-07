@@ -63,6 +63,7 @@ nav:
       - Инструкция: doc-templates/how-to.md
       - Метод API: doc-templates/api-method.md
       - Описание дела: doc-templates/case.md
+      - Справка для игрока: doc-templates/player-guide.md
   - Словарь и глоссарий: glossary.md
   - Тестирование руководства:
       - Итоги тестирования: examples/index.md
