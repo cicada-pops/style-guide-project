@@ -51,3 +51,10 @@ validation:
 
 nav:
   - Главная: index.md
+  - Правила:
+      - Стиль изложения: rules/voice.md
+      - Орфография и пунктуация: rules/spelling.md
+      - Оформление текста: rules/formatting.md
+      - Правила работы с Markdown: rules/markdown.md
+      - Точечные рекомендации: rules/recommendations.md
+  - Словарь и глоссарий: glossary.md
