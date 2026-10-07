@@ -57,6 +57,7 @@ nav:
       - Оформление текста: rules/formatting.md
       - Правила работы с Markdown: rules/markdown.md
       - Точечные рекомендации: rules/recommendations.md
+      - Доступность текста: rules/accessibility.md
   - Шаблоны:
       - README: doc-templates/readme.md
       - Инструкция: doc-templates/how-to.md

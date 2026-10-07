@@ -70,6 +70,7 @@ SQL Hunt — веб-игра, в которой игрок расследует 
 | ОТ | [Оформление текста](rules/formatting.md) |
 | MD | [Правила работы с Markdown](rules/markdown.md) |
 | ТР | [Точечные рекомендации](rules/recommendations.md) |
+| ДС | [Доступность текста](rules/accessibility.md) |
 
 Правила бывают двух уровней:
 

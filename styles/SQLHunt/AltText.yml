@@ -1,0 +1,10 @@
+# ДС-3. Альтернативный текст описывает смысл изображения.
+extends: existence
+message: "Альтернативный текст не должен начинаться со слов «изображение», «скриншот» и подобных: '%s' (ДС-3)."
+link: https://cicada-pops.github.io/style-guide-project/rules/accessibility/
+level: error
+scope: raw
+nonword: true
+ignorecase: true
+tokens:
+  - '!\[(изображение|картинка|скриншот|рисунок|фото|image|screenshot|picture)[^\]]*\]\('
