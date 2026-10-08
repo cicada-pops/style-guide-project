@@ -33,6 +33,7 @@
 | ДС-1. Структура заголовков | markdownlint | `MD001` | error |
 | ДС-2. Текст ссылки | Vale | `SQLHunt.LinkText` | error |
 | ДС-3. Альтернативный текст | markdownlint, Vale | `MD045`, `SQLHunt.AltText` | error |
+| ТИ-3. Многоточие одним символом | Vale | `SQLHunt.Ellipsis` | warning |
 
 Ошибки уровня `error` блокируют merge.
 Предупреждения `warning` и `suggestion` видны в выводе линтера, но сборку не останавливают.
