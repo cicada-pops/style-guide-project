@@ -1,4 +1,6 @@
 # ТР-1. Название продукта пишется «SQL Hunt».
+# Варианты из двух слов вынесены в ProductNameSpaced.yml: если смешать их
+# в одном правиле с вариантами из одного слова, Vale срабатывает нестабильно.
 extends: substitution
 message: "Название продукта пишется '%s', а не '%s' (ТР-1)."
 link: https://cicada-pops.github.io/style-guide-project/rules/recommendations/
@@ -7,6 +9,4 @@ ignorecase: false
 swap:
   SQLHunt: SQL Hunt
   SqlHunt: SQL Hunt
-  Sql Hunt: SQL Hunt
   SQL-Hunt: SQL Hunt
-  SQL HUNT: SQL Hunt
