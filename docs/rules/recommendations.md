@@ -10,7 +10,7 @@
 `SQLHunt` — это имя репозитория, а `sqlhunt.com` — локальный домен.
 Их пишите только как код: `cicada-pops/SQLHunt`.
 
-Проверка: Vale, правило `SQLHunt.ProductName`.
+Проверка: Vale, правила `SQLHunt.ProductName` и `SQLHunt.ProductNameSpaced`.
 
 ## ТР-2. Давайте команды make, а не docker compose
 

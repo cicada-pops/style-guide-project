@@ -49,5 +49,5 @@
 
 <!-- vale on -->
 
-Часть словаря проверяет Vale: правила `SQLHunt.ProductName`, `SQLHunt.Brands` и `SQLHunt.Words`.
+Часть словаря проверяет Vale: правила `SQLHunt.ProductName`, `SQLHunt.ProductNameSpaced`, `SQLHunt.Brands` и `SQLHunt.Words`.
 Если добавляете слово в словарь, добавьте его и в правило Vale.
